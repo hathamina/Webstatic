@@ -1,0 +1,87 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC", cursive;
+}
+
+.boutton {
+  text-decoration: none;
+  border: solid 1px darksalmon;
+  color: darksalmon;
+  padding: 10px 15px;
+  display: inline;
+}
+
+/***************************** 
+           *header* 
+******************************/
+
+header {
+  background-image: url(img/pyramides.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+  text-align: center;
+  color: white;
+}
+
+header a {
+  color: white;
+}
+
+header h1 {
+  font-size: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+/*************************** 
+           *main* 
+****************************/
+
+/* ******** 1-quelsTypesDeDestinations******* */
+.img {
+  height: 300px;
+}
+
+#quelsTypesDeDestinations {
+  display: flex;
+}
+.typeDeDistination {
+  margin-left: 100px;
+  padding: 20px;
+}
+/* ******** 2-differentesFormulesDAbonnements ********** */
+
+#differentesFormulesDAbonnements {
+  text-align: center;
+}
+
+#differentesFormulesDAbonnements ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.euro {
+  border: solid 1px darksalmon;
+  width: 25%;
+  padding: 20px;
+  list-style: none;
+}
+
+#differentesFormulesDAbonnements span {
+  color: darksalmon;
+  font-size: 20px;
+}
+
+/* *******3-concept********** */
+.notreConcept {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
