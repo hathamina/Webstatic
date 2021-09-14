@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+/* ********************************* */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+.zoneDeTexte {
+  width: 1060px;
+  height: 500px;
+  padding: 20px;
+
+  border: solid 1px coral;
+  /* position: absolute;
+  left: 400px;
+  top: 100px; */
+}
+
+/***************************** 
+            header 
+*****************************/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.315)),
+    url(/img/detoxcuresmoothie.jpg);
+
+  background-size: cover;
+  background-position: center;
+
+  height: 600px;
+  text-align: center;
+  color: white;
+}
+
+header .logoBlanc {
+  height: 30px;
+}
+
+header .barNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .barNav nav {
+  word-spacing: 20px;
+}
+
+/***************************** 
+            main
+*****************************/
+
+/* ************************************ */
+
+main .fondRose {
+  height: 250px;
+}
+main .notreDevise {
+  display: flex;
+}
+
+/* *********************************** */
+.methodeDeF {
+  background: linear-gradient(10deg, #f59e28, #feb4c3);
+
+  text-align: center;
+}
+/* ************************************* */
+.concept h2 {
+  text-align: center;
+  padding: 20px;
+}
+.concept ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.concept ul li {
+  text-align: center;
+}
+
+/***************************** 
+            footer
+*****************************/
+
+footer {
+  background: linear-gradient(12deg, #f59e28, #feb4c3);
+  height: 100px;
+  text-align: center;
+}
