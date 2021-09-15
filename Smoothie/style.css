@@ -104,7 +104,25 @@ main h2 {
 *****************************/
 
 footer {
-  background: linear-gradient(12deg, #f59e28, #feb4c3);
-  height: 100px;
+  background: #f59e28;
   text-align: center;
+}
+
+/***************** RESPONSIVE MOBILE **********************/
+
+@media (max-width: 767px) {
+  .zoneDeTexte {
+    max-width: 767px;
+    margin: 0;
+  }
+
+  header .barNav ul {
+    flex-direction: column;
+  }
+  .notreDevise {
+    flex-direction: column;
+  }
+  .zoneDeTexte ul {
+    flex-direction: column;
+  }
 }
