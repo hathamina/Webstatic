@@ -73,6 +73,7 @@ main .notreDevise {
 }
 main p {
   margin: 20px 20px;
+  padding: 0;
 }
 main h2 {
   text-align: center;
@@ -82,8 +83,8 @@ main h2 {
 /* **************2-methode de fabrication********************* */
 .methodeDeF {
   background: linear-gradient(10deg, #f59e28, #feb4c3);
-
   text-align: center;
+  color: white;
 }
 /* *****************3-concept******************** */
 .zoneDeTexte h2 {
@@ -108,9 +109,11 @@ footer {
   text-align: center;
 }
 
-/***************** RESPONSIVE MOBILE **********************/
+/*******************************************************************************************
+                                                 * RESPONSIVE MOBILE *
+********************************************************************************************/
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .zoneDeTexte {
     max-width: 767px;
     margin: 0;
