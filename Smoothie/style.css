@@ -10,11 +10,10 @@ h1 {
 }
 
 .zoneDeTexte {
-  width: 1060px;
-  height: 500px;
+  max-width: 1060px;
   padding: 20px;
-
-  border: solid 1px coral;
+  margin: auto auto;
+  /* border: solid 1px coral;  */
   /* position: absolute;
   left: 400px;
   top: 100px; */
@@ -31,7 +30,6 @@ header {
   background-size: cover;
   background-position: center;
 
-  height: 600px;
   text-align: center;
   color: white;
 }
@@ -48,12 +46,15 @@ header .barNav {
 header .barNav nav {
   word-spacing: 20px;
 }
+header h1 {
+  margin: 120px;
+}
 
 /***************************** 
             main
 *****************************/
 
-/* ************************************ */
+/* *******************1-notre devis***************** */
 
 main .fondRose {
   height: 250px;
@@ -61,8 +62,15 @@ main .fondRose {
 main .notreDevise {
   display: flex;
 }
+main p {
+  margin: 20px 20px;
+}
+main h2 {
+  text-align: center;
+  padding: 0;
+}
 
-/* *********************************** */
+/* **************2-methode de fabrication********************* */
 .methodeDeF {
   background: linear-gradient(10deg, #f59e28, #feb4c3);
 
