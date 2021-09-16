@@ -27,7 +27,7 @@
             </nav>
             <h1>Yogasaloon</h1>
             <p>Votre salon de yoga détente et apéro rigolo !</p>
-            <a href="#" id="btn">Découvrir</a>
+            <a href="#" class="btn">Découvrir</a>
         </div>
 
     </header>
@@ -41,20 +41,7 @@
 
             <article class="concept">
 
-                <a href="#"><img src="/img/mat@2x.png" alt="mat"></a>
-
-                <div class="text">
-                    <h3>Profitez d'une séance de yoga vinyasa d'1h</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consectetur atque id dolore
-                        explicabo possimus velit ullam assumenda ab unde! Dicta qui distinctio quis possimus nulla, ea
-                        minus
-                        in doloribus!</p>
-                </div>
-
-            </article>
-            <article class="conceptO">
-
-                <a href="#"><img src="/img/drink-list@2x.png" alt="mat"></a>
+                <img src="/img/mat@2x.png" alt="mat">
 
                 <div class="text">
                     <h3>Profitez d'une séance de yoga vinyasa d'1h</h3>
@@ -67,7 +54,20 @@
             </article>
             <article class="concept">
 
-                <a href="#"><img src="/img/drink@2x.png" alt="mat"></a>
+                <img src="/img/drink-list@2x.png" alt="mat">
+
+                <div class="text">
+                    <h3>Profitez d'une séance de yoga vinyasa d'1h</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consectetur atque id dolore
+                        explicabo possimus velit ullam assumenda ab unde! Dicta qui distinctio quis possimus nulla, ea
+                        minus
+                        in doloribus!</p>
+                </div>
+
+            </article>
+            <article class="concept">
+
+                <img src="/img/drink@2x.png" alt="mat">
 
                 <div class="text">
                     <h3>Profitez d'une séance de yoga vinyasa d'1h</h3>
@@ -109,14 +109,46 @@
         <section id="contact">
             <h2>Contact-Suivre un cours</h2>
 
+            <form>
+                <ul>
 
+                    <li>
+                        <p>Etre rappelé : </p>
 
+                        <input type="radio" id="Auj" name="jours" value="Aujourd'hui"><label class="btn"
+                            for="Auj">Aujourd'hui</label>
 
+                        <input type="radio" id="Demain" name="jours" value="Demain">
+                        <label class="btn" for="Demain">Demain</label>
+
+                        <input type="radio" id="plusTard" name="jours" value="plusTard">
+                        <label class="btn" for="plusTard">plusTard</label>
+
+                    </li>
+
+                    <li>
+                        <input type="text" name="Nom" id="nom" placeholder="Nom prénom">
+                    </li>
+                    <li>
+                        <input type="text" name="email" id="email" placeholder="email">
+                    </li>
+
+                    <li>
+                        <label for="choice">vous etes interessé par : </label>
+                        <select name="choice" id="choice">
+                            <option value="yoga 1">yoga 1</option>
+                            <option value="yoga 2">yoga 2</option>
+                            <option value="yoga 3">yoga 3</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <button type="submit" value="envoyer" class="btn">envoyer</button>
+                    </li>
+
+                </ul>
+            </form>
         </section>
-
-
-
-
     </main>
     <!-- -----------------------------footer--------------- -->
     <footer>
