@@ -1,0 +1,147 @@
+/* *********************************************************
+                   *LA TYPOGRAPHIE*
+********************************************************* */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap");
+/* *********************************************************
+                   *GLOBAL*
+********************************************************* */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.btn {
+  background-color: rgba(124, 40, 99, 0.541);
+  padding: 10px;
+}
+.btn:hover {
+  background-color: black;
+}
+/* *********************************************************
+                   *LE HEADER PAR SECTION*
+********************************************************* */
+
+header {
+  background-attachment: fixed;
+  background: linear-gradient(
+      to top right,
+      rgba(124, 40, 99, 0.541),
+      rgba(0, 0, 0, 0.363)
+    ),
+    url(/img/fitness.jpg);
+  background-size: cover;
+  background-position: center top;
+  color: white;
+
+  text-align: center;
+}
+header img {
+  height: 30px;
+}
+
+header .barnav {
+  display: flex;
+  justify-content: space-between;
+}
+header .barnav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+header h1 {
+  font-size: 80px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 100%;
+}
+header div {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+/* *********************************************************
+                   *MAIN*
+********************************************************* */
+/* ------zoneMax---------- */
+
+.zoneMax {
+  max-width: 1060px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zoneMax ul {
+  display: flex;
+  justify-content: center;
+}
+
+.man {
+  background-image: url(/img/fitnessman.jpg);
+}
+
+.woman {
+  background-image: linear-gradient(
+      rgba(124, 40, 99, 0.541),
+      rgba(0, 0, 0, 0.164)
+    ),
+    url(/img/fitnesswoman.jpg);
+}
+.zoneMax div {
+  text-align: center;
+}
+.zoneMax ul li {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  margin-top: -60px;
+  padding: 80px 30px;
+  margin-bottom: 15px;
+  width: 50%;
+  text-align: center;
+}
+/* --------------------objectifs-------------------- */
+#objectif ul li {
+  display: flex;
+  margin: 100px 0 0;
+}
+#objectif ul li a {
+  text-align: center;
+  padding: 50px 30px;
+  width: 25%;
+  border-top: solid 0.5px rgba(0, 0, 0, 0.24);
+  border-left: solid 0.5px rgba(0, 0, 0, 0.24);
+}
+#objectif ul li a:first-of-type {
+  border-left: none;
+}
+/* ------------------fitclub------------ */
+.fitclub {
+  background-image: linear-gradient(
+      to right,
+      rgba(124, 40, 99, 0.541) 55%,
+      black 45%
+    ),
+    url(/img/crossfit.jpg);
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.fitclub .zoneMax article {
+  width: 50%;
+}
+
+.fitclub .zoneMax {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fitclub .zoneMax article p,
+.fitclub .zoneMax article a {
+  margin-left: 100px;
+}
+
+/* *********************************************************
+                   *LE FOOTER*
+********************************************************* */ ;
