@@ -9,11 +9,24 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .btn {
-  background-color: rgba(124, 40, 99, 0.541);
+  background-color: rgb(124, 40, 99);
   padding: 10px;
+  color: white;
 }
 .btn:hover {
   background-color: black;
+}
+.zoneMax {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  font-size: small;
+}
+
+.logo {
+  height: 30px;
 }
 /* *********************************************************
                    *LE HEADER PAR SECTION*
@@ -33,13 +46,11 @@ header {
 
   text-align: center;
 }
-header img {
-  height: 30px;
-}
 
 header .barnav {
   display: flex;
   justify-content: space-between;
+  padding: 20px 30px;
 }
 header .barnav ul li {
   display: inline-block;
@@ -63,14 +74,7 @@ header div {
 ********************************************************* */
 /* ------zoneMax---------- */
 
-.zoneMax {
-  max-width: 1060px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.zoneMax ul {
+main .zoneMax ul {
   display: flex;
   justify-content: center;
 }
@@ -86,10 +90,10 @@ header div {
     ),
     url(/img/fitnesswoman.jpg);
 }
-.zoneMax div {
+main .zoneMax div {
   text-align: center;
 }
-.zoneMax ul li {
+main .zoneMax ul li {
   background-position: center;
   background-size: cover;
   color: white;
@@ -100,8 +104,12 @@ header div {
   text-align: center;
 }
 /* --------------------objectifs-------------------- */
+#objectif ul {
+  margin-bottom: 0;
+}
 #objectif ul li {
   display: flex;
+  flex-wrap: wrap;
   margin: 100px 0 0;
 }
 #objectif ul li a {
@@ -123,9 +131,9 @@ header div {
     ),
     url(/img/crossfit.jpg);
 
-  background-size: cover;
-  background-position: center;
   color: white;
+
+  padding: 80px 0;
 }
 
 .fitclub .zoneMax article {
@@ -141,7 +149,95 @@ header div {
 .fitclub .zoneMax article a {
   margin-left: 100px;
 }
+/* -----------------nos services-------------------- */
+.services {
+  margin: 0;
+}
+.services ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.services ul li {
+  width: 33.2%;
+
+  text-align: center;
+  padding: 50px 100px;
+}
+.services ul li:nth-of-type(odd) {
+  background-color: rgba(128, 128, 128, 0.096);
+}
+/* --------------cart---------- */
+.cart iframe {
+  width: 100%;
+}
+.cartt {
+  margin-bottom: -7px;
+}
+
+.violet {
+  background-color: rgb(124, 40, 99);
+  height: 10px;
+}
 
 /* *********************************************************
                    *LE FOOTER*
-********************************************************* */ ;
+********************************************************* */
+
+footer {
+  background-color: rgba(0, 0, 0, 0.911);
+  font-size: small;
+}
+
+footer .zoneMax .total {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 80px;
+}
+/* ------------------------- */
+footer .zoneMax .left .logoo {
+  word-spacing: 10px;
+  font-size: large;
+}
+footer .zoneMax .left {
+  text-align: end;
+  width: 25%;
+  padding-top: 20px;
+}
+/* ------------------- */
+footer .zoneMax .formul {
+  background: white;
+  height: 400px;
+  width: 55%;
+  margin: -100px;
+  color: black;
+  z-index: 9999;
+}
+
+footer .zoneMax .formul ul {
+  text-align: center;
+}
+footer .zoneMax .formul ul li {
+  margin: 40px;
+}
+footer .zoneMax .formul ul li .btn {
+  color: white;
+}
+
+/* ----------------------- */
+footer .zoneMax .right ul {
+  flex-direction: column;
+}
+footer .zoneMax .right i {
+  color: rgb(124, 40, 99);
+}
+footer .zoneMax .right li h3 {
+  word-spacing: 10px;
+}
+footer .zoneMax .right li p {
+  padding-left: 25px;
+}
+footer .zoneMax .right ul li {
+  text-align: start;
+}
