@@ -31,7 +31,7 @@ h1 {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.315)),
-    url(/img/detoxcuresmoothie.jpg);
+    url(./img/detoxcuresmoothie.jpg);
 
   background-size: cover;
   background-position: center;

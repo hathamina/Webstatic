@@ -39,7 +39,7 @@ header {
       rgba(124, 40, 99, 0.541),
       rgba(0, 0, 0, 0.363)
     ),
-    url(/img/fitness.jpg);
+    url(./img/fitness.jpg);
   background-size: cover;
   background-position: center top;
   color: white;
@@ -80,7 +80,7 @@ main .zoneMax ul {
 }
 
 .man {
-  background-image: url(/img/fitnessman.jpg);
+  background-image: url(./img/fitnessman.jpg);
 }
 
 .woman {
@@ -88,7 +88,7 @@ main .zoneMax ul {
       rgba(124, 40, 99, 0.541),
       rgba(0, 0, 0, 0.164)
     ),
-    url(/img/fitnesswoman.jpg);
+    url(./img/fitnesswoman.jpg);
 }
 main .zoneMax div {
   text-align: center;
@@ -129,7 +129,7 @@ main .zoneMax ul li {
       rgba(124, 40, 99, 0.541) 55%,
       black 45%
     ),
-    url(/img/crossfit.jpg);
+    url(./img/crossfit.jpg);
 
   color: white;
 
