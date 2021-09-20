@@ -173,15 +173,8 @@ main .zoneMax ul li {
 /* --------------cart---------- */
 .cart iframe {
   width: 100%;
+  display: block;
 }
-.cartt {
-  margin-bottom: -7px;
-}
-
-/* .violet {
-  background-color: rgb(124, 40, 99);
-  height: 10px;
-} */
 
 /* *********************************************************
                    *LE FOOTER*
