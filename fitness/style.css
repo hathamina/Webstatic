@@ -33,7 +33,6 @@ h3 {
 ********************************************************* */
 
 header {
-  background-attachment: fixed;
   background: linear-gradient(
       to top right,
       rgba(124, 40, 99, 0.541),
@@ -45,6 +44,7 @@ header {
   color: white;
 
   text-align: center;
+  background-attachment: fixed;
 }
 
 header .barnav {
@@ -78,11 +78,9 @@ main .zoneMax ul {
   display: flex;
   justify-content: center;
 }
-
 .man {
   background-image: url(./img/fitnessman.jpg);
 }
-
 .woman {
   background-image: linear-gradient(
       rgba(124, 40, 99, 0.541),
@@ -103,7 +101,9 @@ main .zoneMax ul li {
   width: 50%;
   text-align: center;
 }
+
 /* --------------------objectifs-------------------- */
+
 #objectif ul {
   margin-bottom: 0;
 }
@@ -122,7 +122,9 @@ main .zoneMax ul li {
 #objectif ul li a:first-of-type {
   border-left: none;
 }
+
 /* ------------------fitclub------------ */
+
 .fitclub {
   background-image: linear-gradient(
       to right,
@@ -149,7 +151,9 @@ main .zoneMax ul li {
 .fitclub .zoneMax article a {
   margin-left: 100px;
 }
+
 /* -----------------nos services-------------------- */
+
 .services {
   margin: 0;
 }
@@ -159,8 +163,7 @@ main .zoneMax ul li {
   margin: 0;
 }
 .services ul li {
-  width: 33.2%;
-
+  width: calc(100% / 3);
   text-align: center;
   padding: 50px 100px;
 }
@@ -175,10 +178,10 @@ main .zoneMax ul li {
   margin-bottom: -7px;
 }
 
-.violet {
+/* .violet {
   background-color: rgb(124, 40, 99);
   height: 10px;
-}
+} */
 
 /* *********************************************************
                    *LE FOOTER*
@@ -186,6 +189,7 @@ main .zoneMax ul li {
 
 footer {
   background-color: rgba(0, 0, 0, 0.911);
+  border-top: solid 20px rgb(124, 40, 99);
   font-size: small;
 }
 
@@ -195,7 +199,9 @@ footer .zoneMax .total {
   color: white;
   padding-bottom: 80px;
 }
+
 /* ------------------------- */
+
 footer .zoneMax .left .logoo {
   word-spacing: 10px;
   font-size: large;
@@ -205,18 +211,21 @@ footer .zoneMax .left {
   width: 25%;
   padding-top: 20px;
 }
+
 /* ------------------- */
+
 footer .zoneMax .formul {
   background: white;
-  height: 400px;
+
   width: 55%;
-  margin: -100px;
+  margin-top: -60px;
   color: black;
   z-index: 9999;
 }
 
 footer .zoneMax .formul ul {
   text-align: center;
+  padding-bottom: 50px;
 }
 footer .zoneMax .formul ul li {
   margin: 40px;
@@ -224,8 +233,14 @@ footer .zoneMax .formul ul li {
 footer .zoneMax .formul ul li .btn {
   color: white;
 }
+footer .formul ul li input {
+  border: 0px;
+  border-bottom: solid 0.5px gray;
+  width: 100%;
+}
 
 /* ----------------------- */
+
 footer .zoneMax .right ul {
   flex-direction: column;
 }
@@ -240,4 +255,86 @@ footer .zoneMax .right li p {
 }
 footer .zoneMax .right ul li {
   text-align: start;
+}
+/* *********************************************************
+                   *tablette
+********************************************************* */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .services ul li {
+    width: 50%;
+  }
+  .services ul li:nth-of-type(odd) {
+    background: white;
+  }
+  .services ul li:nth-of-type(2),
+  .services ul li:nth-of-type(3),
+  .services ul li:nth-of-type(6) {
+    background-color: rgba(128, 128, 128, 0.158);
+  }
+}
+/* *********************************************************
+                   *mobile
+********************************************************* */
+
+@media (max-width: 768px) {
+  main .zoneMax ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* ------------------ */
+  #objectif ul li a {
+    width: 50%;
+  }
+
+  /* ----------------------- */
+  .fitclub {
+    background: black;
+  }
+  .fitclub .zoneMax {
+    justify-content: center;
+  }
+  .fitclub .zoneMax article h2 {
+    margin: 0 50px;
+  }
+  .services ul li {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* ------------------------- */
+
+  footer .zoneMax .total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .zoneMax .total .formul {
+    order: -1;
+  }
+
+  footer .zoneMax .left {
+    text-align: center;
+    width: 50%;
+    padding-top: 60px;
+  }
+
+  footer .zoneMax .right {
+    width: 50%;
+    padding-top: 50px;
+  }
+  header .barnav {
+    background: rgb(124, 40, 99);
+    padding: 15px 20px;
+  }
+  header .barnav ul li {
+    display: none;
+
+    flex-direction: column;
+  }
+}
+@media (min-width: 767px) {
+  header label {
+    display: none;
+  }
 }
