@@ -284,11 +284,13 @@ footer .zoneMax .right ul li {
   .fitclub {
     background: black;
   }
-  .fitclub .zoneMax {
-    justify-content: center;
+  .fitclub .zoneMax article {
+    width: 100%;
   }
+  .fitclub .zoneMax article p,
   .fitclub .zoneMax article h2 {
-    margin: 0 50px;
+    margin: 0;
+    padding: 30px;
   }
   .services ul li {
     width: 100%;
