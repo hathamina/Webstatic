@@ -15,7 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .logo {
-  height: 50px;
+  height: 100px;
 }
 .container {
   max-width: 1060px;
@@ -29,7 +29,7 @@ body {
         *header
 ******************** */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.418)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.418)),
     url(./img/perso.jpeg);
 
   background-position: center;
@@ -39,15 +39,18 @@ header {
 header nav {
   display: flex;
   text-align: center;
+  padding-top: 30px;
 }
 header nav ul {
   display: flex;
   align-items: center;
   margin: auto;
 }
-header nav ul li {
-  margin: 20px;
+
+header nav ul li a {
+  padding: 20px;
 }
+
 header nav ul .liste {
   display: flex;
 }
@@ -59,11 +62,12 @@ header .container {
 }
 header .container h1 {
   font-size: 60px;
-  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 0;
 }
 header .container p {
   margin: 0;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 /* ********************
@@ -132,4 +136,36 @@ main .container #desRencontres img {
 }
 main .container #desRencontres article {
   padding-left: 30px;
+}
+/* --------------------let's go-- */
+main #letsGo {
+  background-image: linear-gradient(
+      rgba(79, 17, 34, 0.26),
+      rgba(79, 17, 34, 0.308)
+    ),
+    url(./img/gandalf.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 150px;
+}
+main #letsGo .container a {
+  padding: 10px 30px;
+  border: solid 2px white;
+}
+/* ********************
+        *main
+******************** */
+footer {
+  background: rgb(79, 17, 34);
+  color: white;
+}
+
+footer .container article {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container p {
+  font-size: 15px;
 }
