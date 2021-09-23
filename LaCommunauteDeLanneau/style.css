@@ -144,7 +144,7 @@ main #letsGo {
       rgba(79, 17, 34, 0.308)
     ),
     url(./img/gandalf.jpg);
-  background-position: center;
+  background-position: center 30%;
   background-size: cover;
   text-align: center;
   color: white;
