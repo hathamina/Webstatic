@@ -11,50 +11,125 @@
 
 <body>
     <main>
+
         <h1>candidater pour partir en voyage</h1>
         <p>Notre société <strong>Evasion</strong> vous propose de découvrir en avant premiere des lieux paradisiaque que
             nous souhaitons ajouter à notre catalogue. Mzrci de remplir les différents champs cidessous pour candidater
             au
             poste d'<strong>Eva'discover!</strong></p>
         <!-- ------------cordonnées-------------- -->
-        <fieldset>
-            <legend>Coordonnées</legend>
-            <div>
-                <label for="email">Votre email <i>(*)</i> : </label>
-                <input type="email" name="tel" id="email" placeholder="emma@lapasserelle.sch" required> <br>
-            </div>
-            <div>
-                <label for="email">Votre téléphone: </label>
-                <input type="tel" name="phon" id="phon" placeholder="0767848254" maxlength="10" pattern="^[0-9]*$"
-                    title="Maerci de saisir un numero de telephone francias sans préfixe ni espace (exp: 0767948154)">
-            </div>
-        </fieldset>
-        <!-- ----------fin coordonnee--- -->
-        <!-- -----------------information profitionnelles------------------ -->
-        <fieldset>
-            <legend>Information personnelles</legend>
-            <div>
-                <label for="name"> Votre nom</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Khiat">
-            </div>
-            <div>
-                <label for="name">Votre prénom</label>
-                <input type="text" name="name" id="name" placeholder="Amina">
-            </div>
-            <hr>
-            <div class="label">
-                Vous ete plutot:
-                <input type="radio" name="Homme" id="homme">
-                <label for="femme">Homme</label>
+        <form action="#">
+            <fieldset>
+                <legend>Coordonnées</legend>
+                <div>
+                    <label for="email">Votre email <i>(*)</i> : </label>
+                    <input type="email" name="tel" id="email" placeholder="emma@lapasserelle.sch" required> <br>
+                </div>
+                <div>
+                    <label for="email">Votre téléphone: </label>
+                    <input type="tel" name="phon" id="phon" placeholder="0767848254" maxlength="10" pattern="^[0-9]*$"
+                        title="Maerci de saisir un numero de telephone francias sans préfixe ni espace (exp: 0767948154)">
+                </div>
+            </fieldset>
+            <!-- ----------fin coordonnee--- -->
+            <!-- -----information profitionnelles---- -->
+            <fieldset>
+                <legend>Information personnelles</legend>
+                <div>
+                    <label for="name"> Votre nom</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Khiat">
+                </div>
+                <div>
+                    <label for="name">Votre prénom</label>
+                    <input type="text" name="name" id="name" placeholder="Amina">
+                </div>
+                <hr>
+                <div class="label">
+                    Vous ete plutot:
+                    <input type="radio" name="sexe" id="homme">
+                    <label for="femme">Homme</label>
 
-                <input type="radio" name="femme" id="femme">
-                <label for="homme">Femme</label>
+                    <input type="radio" name="sexe" id="femme">
+                    <label for="homme">Femme</label>
 
-                <input type="radio" name="determiner" id="determiner">
-                <label for="determiner">à déterminer</label>
-            </div>
+                    <input type="radio" name="sexe" id="determiner">
+                    <label for="determiner">à déterminer</label>
+                </div>
+                <hr>
+                <div>
+                    <label for="adress">votre adresse:</label>
+                    <input type="text" name="adress" id="adress">
+                </div>
+                <div>
+                    <label for="postal">Votre code postal:</label>
+                    <input type="text" name="Postal" id="postal" maxlength="5" pattern="^[0-9]*$"
+                        title="Merci de saisir un code postal français métropolitain.">
+                </div>
+                <div>
+                    <label for="dep">Votre département</label>
+                    <select name="dep" id="dep">
+                        <option value="04">Alpes de Haute Provence</option>
+                        <option value="05">Hautes-Alpes</option>
+                        <option value="06">Alpes-Maritimes</option>
+                        <option value="13">Bouches du Rhône</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ville">Votre ville:</label>
+                    <input type="text" name="ville" id="ville">
+                </div>
+                <hr>
+                <div>
+                    <p>Quel bujet etes vous pret à investir pour valider votre candidature ?</p>
+                    <label for="bujet">budjet</label>
+                    200€&nbsp;<input type="range" name="budjet" id="budjet" value="1000" min="200" max="3000" step="100"
+                        list="money">&nbsp;3000€
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Langues</legend>
+                <p>Merci de cocher toutes les langues que vous pratiquez:</p>
+                <div class="label">
+                    <input type="checkbox" name="lang[]" id="anglais" value="anglais"><label
+                        for="anglais">anglais</label>
+                    <input type="checkbox" name="lang[]" id="Français" value="francias"><label
+                        for="Français">Français</label>
+                    <input type="checkbox" name="lang[]" id="espagnol" value="espagnol"><label
+                        for="espagnol">espagnol</label>
+                    <input type="checkbox" name="lang[]" id="italien" value="italien"><label
+                        for="italien">italien</label>
+                    <input type="checkbox" name="lang[]" id="allemend" value="allemend"><label
+                        for="allemens">allemens</label>
+                    <input type="checkbox" name="lang[]" id="arabe" value="arabe"><label for="arabe">arabe</label>
+                </div>
+            </fieldset>
+            <!-- -------------destination----------- -->
+            <fieldset>
+                <legend>Vos destinations de reves</legend>
+                <div>
+                    <label for="email">Choisir vos destinations:</label>
+                    <select style="width: 200px; height: 150px;" name="destination" id="email" multiple>
+                        <optgroup label="Outre-mer">
+                            <option value="Martinique">Martinique</option>
+                            <option value="Réunion">Réunion</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guyane">Guyane</option>
+                            <option value="Mayotte">Mayotte</option>
+                        </optgroup>
+                        <optgroup label="Étranger">
+                            <option value="New-York">New-York</option>
+                            <option value="Hawaï">Hawaï</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Australie">Australie</option>
+                            <option value="Brésil">Brésil</option>
+                        </optgroup>
 
-        </fieldset>
+                    </select>
+                </div>
+                <small><i>Bien maintenir la touche CTRL enfoncée pour sélectionner plusieurs choix</i></small>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+        </form>
     </main>
 </body>
 
