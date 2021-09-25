@@ -1,4 +1,11 @@
 main {
-  background-image: url(/background.jpg);
+  background-image: url(./background.jpg);
   background-size: cover;
+}
+
+/* ***************
+*Globale*
+**************** */
+div {
+  margin: 20px;
 }

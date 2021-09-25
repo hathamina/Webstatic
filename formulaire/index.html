@@ -19,13 +19,42 @@
         <!-- ------------cordonnées-------------- -->
         <fieldset>
             <legend>Coordonnées</legend>
-            <label for="email">Votre email <em>(*)</em> : </label>
-            <input type="email" name="tel" id="email" placeholder="emma@lapasserelle.sch"> <br>
-
-            <label for="email">Votre email <em>(*)</em> : </label>
-            <input type="tel" name="tel" id="tel" placeholder="0184805800">
+            <div>
+                <label for="email">Votre email <i>(*)</i> : </label>
+                <input type="email" name="tel" id="email" placeholder="emma@lapasserelle.sch" required> <br>
+            </div>
+            <div>
+                <label for="email">Votre téléphone: </label>
+                <input type="tel" name="phon" id="phon" placeholder="0767848254" maxlength="10" pattern="^[0-9]*$"
+                    title="Maerci de saisir un numero de telephone francias sans préfixe ni espace (exp: 0767948154)">
+            </div>
         </fieldset>
+        <!-- ----------fin coordonnee--- -->
+        <!-- -----------------information profitionnelles------------------ -->
+        <fieldset>
+            <legend>Information personnelles</legend>
+            <div>
+                <label for="name"> Votre nom</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Khiat">
+            </div>
+            <div>
+                <label for="name">Votre prénom</label>
+                <input type="text" name="name" id="name" placeholder="Amina">
+            </div>
+            <hr>
+            <div class="label">
+                Vous ete plutot:
+                <input type="radio" name="Homme" id="homme">
+                <label for="femme">Homme</label>
 
+                <input type="radio" name="femme" id="femme">
+                <label for="homme">Femme</label>
+
+                <input type="radio" name="determiner" id="determiner">
+                <label for="determiner">à déterminer</label>
+            </div>
+
+        </fieldset>
     </main>
 </body>
 
