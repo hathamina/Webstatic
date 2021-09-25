@@ -83,8 +83,7 @@ main .container #lAventur .aventuree ul {
   display: flex;
 }
 main .container #lAventur .aventuree ul li h3 {
-  padding-left: 20px;
-  line-height: 0.99;
+  line-height: 100%;
 }
 main .container #lAventur .aventuree ul li h2 {
   margin-bottom: -80px;
@@ -98,6 +97,7 @@ main .container #lAventur .aventuree ul li {
 main .container #laCommunaute {
   border: solid 2px rgb(79, 17, 34);
   text-align: center;
+  margin-top: 50px;
 }
 main .container #laCommunaute .communaute ul {
   display: flex;
@@ -155,7 +155,7 @@ main #letsGo .container a {
   border: solid 2px white;
 }
 /* ********************
-        *main
+        *footer
 ******************** */
 footer {
   background: rgb(79, 17, 34);
@@ -168,4 +168,46 @@ footer .container article {
 }
 footer .container p {
   font-size: 15px;
+  margin: 0;
+}
+/* *************************************
+               *mobile
+************************************* */
+@media (max-width: 768px) {
+  header {
+    background-position: left center;
+  }
+
+  header nav ul .liste {
+    display: none;
+  }
+  header nav ul {
+    margin-bottom: 100px;
+  }
+
+  header .container h1 {
+    line-height: 100%;
+    margin: 40px auto;
+  }
+  main .container #lAventur .aventuree ul {
+    flex-direction: column;
+    padding: 0 100px;
+    margin: 0;
+    align-items: 100%;
+  }
+  main .container #laCommunaute .communaute ul li {
+    width: calc(100% / 2);
+  }
+  main .container #desRencontres {
+    flex-direction: column;
+  }
+  main .container #desRencontres img {
+    height: 350px;
+    width: 90%;
+    margin: 0;
+    margin-top: 40px;
+  }
+  main .container #desRencontres article {
+    padding: 30px;
+  }
 }
