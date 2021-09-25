@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&display=swap");
+
 main {
+  font-family: "Baloo Thambi 2", cursive;
   background-image: linear-gradient(
       to bottom right,
       rgba(230, 84, 198, 0.2),
@@ -12,9 +15,11 @@ main {
 *Globale*
 **************** */
 
-div {
-  margin: 20px;
-}
 input {
   border: none;
+}
+
+form div:not(.label) label {
+  width: 150px;
+  display: inline-block;
 }
