@@ -14,16 +14,17 @@
 .btn {
   border-radius: 50px;
 }
-.btn a {
-  color: green;
-}
+
 /* **********************
           *header*
 *********************** */
 header {
-  background-image: linear-gradient(#ea91915d, #4b4975b0),
+  background-image: linear-gradient(#ea919193, #4b497500),
     url(./Cornfood/img/photo.jpeg);
   background-size: cover;
+}
+header nav img {
+  height: 50px;
 }
 
 header::before {
@@ -32,9 +33,8 @@ header::before {
   height: 50px;
   background: white;
   display: inline-block;
-
   transform: rotate(45deg);
   position: absolute;
   left: 50%;
-  top: 420px;
+  top: 382px;
 }
