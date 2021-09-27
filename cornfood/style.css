@@ -19,12 +19,17 @@
           *header*
 *********************** */
 header {
-  background-image: linear-gradient(#ea919193, #4b497500),
+  background-image: linear-gradient(
+      to left,
+      rgba(75, 73, 117, 0.7),
+      rgba(234, 145, 145, 0.7)
+    ),
     url(./Cornfood/img/photo.jpeg);
   background-size: cover;
 }
 header nav img {
   height: 50px;
+  position: relative;
 }
 
 header::before {
@@ -35,6 +40,6 @@ header::before {
   display: inline-block;
   transform: rotate(45deg);
   position: absolute;
-  left: 50%;
-  top: 382px;
+  left: calc(50% - 25px);
+  top: 335px;
 }
