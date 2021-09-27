@@ -21,6 +21,8 @@ header h1 {
   text-align: center;
   padding: 150px 0;
   text-transform: none;
+  font-size: 4rem;
+  letter-spacing: 5px;
 }
 
 #fabrication {
