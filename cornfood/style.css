@@ -1,0 +1,40 @@
+/* 
+- Rose : #EA9191
+- Bleu : #4B4975
+- Jaune : #E6B331
+
+
+- Titre h1 : Roboto
+- Sous-titres : Rockwell (à installer manuellement, sans Google Font)
+- Contenu : Roboto
+*/
+/* **********************
+          *Global*
+*********************** */
+.btn {
+  border-radius: 50px;
+}
+.btn a {
+  color: green;
+}
+/* **********************
+          *header*
+*********************** */
+header {
+  background-image: linear-gradient(#ea91915d, #4b4975b0),
+    url(./Cornfood/img/photo.jpeg);
+  background-size: cover;
+}
+
+header::before {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background: white;
+  display: inline-block;
+
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+  top: 420px;
+}
