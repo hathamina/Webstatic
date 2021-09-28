@@ -1,45 +1,105 @@
-/* 
-- Rose : #EA9191
-- Bleu : #4B4975
-- Jaune : #E6B331
+/* ******************************
+*TYPOGRAPHIE*
+******************************* */
 
-
-- Titre h1 : Roboto
-- Sous-titres : Rockwell (à installer manuellement, sans Google Font)
-- Contenu : Roboto
-*/
-/* **********************
-          *Global*
-*********************** */
-.btn {
-  border-radius: 50px;
+/* ******************************
+*GLOBAL*
+******************************* */
+:root {
+  --rose: 234, 145, 145;
+  --bleu: 75, 73, 117;
+  --jaune: 230, 179, 49;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+.btn {
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 10 15px;
+  color: rgba(var(--rose));
+}
+/* ******************************
+*CSS PAR SECTION*
+******************************* */
 
-/* **********************
-          *header*
-*********************** */
 header {
   background-image: linear-gradient(
-      to left,
-      rgba(75, 73, 117, 0.7),
-      rgba(234, 145, 145, 0.7)
+      to top right,
+      rgba(var(--rose), 0.7),
+      rgba(var(--bleu), 0.7)
     ),
     url(./Cornfood/img/photo.jpeg);
+  background-position: center;
   background-size: cover;
-}
-header nav img {
-  height: 50px;
+  color: white;
+  text-align: center;
   position: relative;
 }
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li {
+  display: inline;
+  padding-left: 20px;
+}
+header .container .text h1 {
+  text-transform: uppercase;
+}
+header .container .text p {
+  padding: 20px 0;
+}
+header .container .text {
+  padding: 150px 0;
+}
 
-header::before {
+header::after {
   content: " ";
   width: 50px;
   height: 50px;
   background: white;
-  display: inline-block;
-  transform: rotate(45deg);
   position: absolute;
+  bottom: -25px;
   left: calc(50% - 25px);
-  top: 335px;
+  transform: rotate(45deg);
+}
+/* ******************************
+*main*
+******************************* */
+#concept {
+  margin: 100px;
+}
+#concept h2 {
+  margin-left: 60px;
+  position: relative;
+}
+#concept h2::before {
+  content: " ";
+  height: 180px;
+  width: 200px;
+  background-image: url(./Cornfood/img/grain.png);
+  background-color: rgb(var(--jaune));
+  background-size: cover;
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  z-index: -1;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+#concept ul li {
+  margin-top: 20px;
+}
+#concept ul li img {
+  margin-right: 10px;
+  height: 40px;
+}
+#concept h2,
+#concept ul li h3 {
+  color: rgba(var(--bleu));
 }
